@@ -79,3 +79,11 @@
     ```bash
     flutter run --release
     ```
+
+
+    ### 📥 Download / Скачать
+
+You can download the latest APK from the Releases page.
+Скачать последнюю версию APK можно на странице релизов.
+
+[![Download APK](https://img.shields.io/badge/Download-APK-blue?style=for-the-badge&logo=android)](https://github.com/ultraswaglol/pixelka-offline/releases/latest)
