@@ -1,0 +1,61 @@
+name: pixelka_offline
+description: A new Flutter project for testing Gemma with MediaPipe .task files.
+publish_to: 'none'
+version: 1.0.3+4
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  yandex_mobileads: ^7.12.0
+  flutter_downloader: ^1.11.7
+  permission_handler: ^11.3.1
+  flutter_dotenv: ^5.1.0
+
+  flutter_gemma: ^0.11.2
+  wakelock_plus: ^1.2.1
+  path_provider: ^2.1.3
+  path: ^1.9.0
+  provider: ^6.1.2
+
+  flutter_markdown_plus: ^1.0.5
+  intl: ^0.20.2
+  markdown: ^7.2.1
+  url_launcher: ^6.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.10
+  analyzer: ^6.4.1
+
+  # ✅ 1. ДОБАВИЛ ПАКЕТ ДЛЯ ИКОНОК
+  flutter_launcher_icons: ^0.13.1
+
+# ✅ 2. ДОБАВИЛ БЛОК НАСТРОЕК ДЛЯ ИКОНОК
+# (Инструкции в файле icon_instructions.md)
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png" # <--- ПОЛОЖИ СВОЮ ИКОНКУ СЮДА
+  min_sdk_android: 21 # (Обычно 21 - это хороший стандарт)
+  remove_alpha_ios: true
+
+
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+    - .env
+    # ✅ 3. ДОБАВИЛ ПАПКУ С ИКОНКОЙ В 'assets'
+    # (Это нужно, чтобы image_path выше сработал)
+    - assets/icon/
